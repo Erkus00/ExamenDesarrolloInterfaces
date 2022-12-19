@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane prefHeight="66.0" prefWidth="886.0">
+            <children>
+                <Text layoutX="365.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GESTOR de DIETETICA" textAlignment="JUSTIFY" textOrigin="CENTER" wrappingWidth="211.13671875">
+                    <font>
+                        <Font name="Arial Narrow" size="21.0" />
+                    </font>
+                </Text>
+                <Text layoutX="365.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creado por Carlos Aragon" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="211.13671875">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <HBox prefHeight="334.0" prefWidth="888.0">
+            <children>
+                <GridPane fx:id="gridPaneAddTarea" maxWidth="1.7976931348623157E308" prefHeight="276.0" prefWidth="280.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="165.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="123.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="123.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="179.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="225.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="225.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text fx:id="areaNombre" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" textAlignment="CENTER" wrappingWidth="53.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <TextField fx:id="nombre" prefHeight="26.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <Text fx:id="areaEdad" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" textAlignment="CENTER" wrappingWidth="35.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <Text fx:id="areaPeso" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso" textAlignment="CENTER" wrappingWidth="36.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <ComboBox fx:id="sexoCombo" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        <Text fx:id="areaSexo" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" textAlignment="CENTER" wrappingWidth="31.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <Text fx:id="areaAltura" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura" textAlignment="CENTER" wrappingWidth="44.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <Spinner fx:id="edadPick" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </Spinner>
+                        <Text fx:id="areaActividad" strokeType="OUTSIDE" strokeWidth="0.0" text="Actividad" textAlignment="CENTER" wrappingWidth="58.57425308227539" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="15.0" top="5.0" />
+                            </GridPane.margin>
+                        </Text>
+                        <Spinner fx:id="pesoPick" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </Spinner>
+                        <Spinner fx:id="alturaPick" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </Spinner>
+                        <ComboBox fx:id="actividadCombo" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </GridPane.margin>
+                        </ComboBox>
+                        <Button fx:id="close1" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="176.0" text="Añadir a la Tabla" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                    </children>
+                </GridPane>
+                <TableView fx:id="vistaTabla" prefHeight="334.0" prefWidth="602.0">
+                    <columns>
+                        <TableColumn fx:id="nombreCol" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="sexoCol" prefWidth="75.0" text="Sexo" />
+                        <TableColumn fx:id="edadCol" prefWidth="75.0" text="Edad" />
+                        <TableColumn fx:id="pesoCol" prefWidth="75.0" text="Peso" />
+                        <TableColumn fx:id="alturaCol" prefWidth="75.0" text="Altura" />
+                        <TableColumn fx:id="actividadCol" prefWidth="75.0" text="Actividad" />
+                        <TableColumn fx:id="gerCol" prefWidth="75.0" text="GER" />
+                        <TableColumn fx:id="getCol" prefWidth="75.0" text="GET" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <Pane prefHeight="58.0" prefWidth="886.0">
+            <children>
+                <Text fx:id="infoLabel" layoutX="337.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACION " textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="211.13671875">
+                    <font>
+                        <Font name="Bodoni MT" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+    </children>
+</VBox>
