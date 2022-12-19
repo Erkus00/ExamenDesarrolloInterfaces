@@ -128,7 +128,6 @@ public class GestorDieteticaController implements Initializable {
 
         } catch (NullPointerException e) {
             infoLabel.setText("Ha sucedido un Error Inesperado");
-            infoLabel.setStyle("-fx-text-fill: red");
         }
 
         nombreCol.setCellValueFactory(new PropertyValueFactory<>("nombre"));
@@ -154,7 +153,6 @@ public class GestorDieteticaController implements Initializable {
             actividadCombo.setValue(null);
         } else {
             infoLabel.setText("ERROR: No se ha podido añadir la persona. Rellene todos los Campos");
-            infoLabel.setStyle("-fx-text-fill: red");
         }
     }
 }
