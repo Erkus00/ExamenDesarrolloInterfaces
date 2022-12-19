@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.examen1tr_desarrollointerfaces.GestorDieteticaController">
     <children>
         <Pane prefHeight="66.0" prefWidth="886.0">
             <children>
@@ -128,7 +128,7 @@
                                 <Insets left="10.0" top="5.0" />
                             </GridPane.margin>
                         </ComboBox>
-                        <Button fx:id="close1" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="176.0" text="Añadir a la Tabla" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Button fx:id="añadirTabla" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="26.0" prefWidth="176.0" text="Añadir a la Tabla" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                     </children>
                 </GridPane>
                 <TableView fx:id="vistaTabla" prefHeight="334.0" prefWidth="602.0">
@@ -147,7 +147,7 @@
         </HBox>
         <Pane prefHeight="58.0" prefWidth="886.0">
             <children>
-                <Text fx:id="infoLabel" layoutX="337.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACION " textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="211.13671875">
+                <Text fx:id="infoLabel" layoutX="187.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACION " textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="511.13671875">
                     <font>
                         <Font name="Bodoni MT" size="14.0" />
                     </font>

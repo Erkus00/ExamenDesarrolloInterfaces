@@ -22,4 +22,47 @@ public class Persona {
         this.ger = ger;
         this.get = get;
     }
+    public Persona(){
+
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public Integer getEdad() {
+        return edad;
+    }
+
+    public Integer getPeso() {
+        return peso;
+    }
+
+    public Integer getAltura() {
+        return altura;
+    }
+
+    public String getActividad() {
+        return actividad;
+    }
+
+    public double getGer() {
+        return ger;
+    }
+
+    public double getGet() {
+        return get;
+    }
+
+    public void setGer(double ger) {
+        this.ger = ger;
+    }
+
+    public void setGet(double get) {
+        this.get = get;
+    }
 }
